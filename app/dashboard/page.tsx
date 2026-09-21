@@ -5,9 +5,8 @@ import { lusitana } from '@/app/ui/fonts';
 import { fetchRevenue, fetchLatestInvoices, fetchCardData } from '../lib/data';
 
 export default async function Page() {
-    const revenueData = await fetchRevenue();
-    const latestInvData = await fetchLatestInvoices();
-    const cardData = await fetchCardData();
+    const data = await Promise.all([fetchRevenue(), fetchLatestInvoices(), fetchCardData()]);
+    const [revenueData, latestInvData, cardData] = data;
     const { totalPaidInvoices, totalPendingInvoices, numberOfInvoices, numberOfCustomers } = cardData;
     return (
         <main>
