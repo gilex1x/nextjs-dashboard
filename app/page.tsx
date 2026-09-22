@@ -23,7 +23,9 @@ export default function Page() {
             </a>
             , by Vercel.
           </p>
-          <p>Develop by <a className='text-blue-400' href='https://gil-dev.netlify.app/' target='_blank'>Gilberto Santamaria</a> to update knowledge about Nextjs latest version</p>
+          <p>Develop by
+            <a className='text-blue-400' href='https://gil-dev.netlify.app/' target='_blank'> Gilberto Santamaria </a>
+            to refresh they own knowledge about Nextjs latest version</p>
           <Link
             href="/login"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
