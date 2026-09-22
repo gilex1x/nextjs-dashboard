@@ -1,5 +1,3 @@
-'use client';
-
 import { CustomerField, InvoiceForm } from '@/app/lib/definitions';
 import {
   CheckIcon,
@@ -22,6 +20,7 @@ export default function EditInvoiceForm({
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
   return (
     <form action={async (data) => {
+      'use server'
       await updateInvoiceWithId(data)
     }}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
