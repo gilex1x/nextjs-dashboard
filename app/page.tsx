@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import AcmeLogo from '@/app/ui/acme-logo';
-import  styles from '@/app/ui/home.module.css';
+import styles from '@/app/ui/home.module.css';
 import { lusitana } from './ui/fonts';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
@@ -17,12 +17,13 @@ export default function Page() {
             className={styles.shape}
           />
           <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
+            <strong>Welcome to Invoices Admin.</strong> This is the example for the{' '}
+            <a href="https://nextjs.org/learn/" className="text-blue-400">
               Next.js Learn Course
             </a>
-            , brought to you by Vercel.
+            , by Vercel.
           </p>
+          <p>Develop by <a className='text-blue-400' href='https://gil-dev.netlify.app/' target='_blank'>Gilberto Santamaria</a> to update knowledge about Nextjs latest version</p>
           <Link
             href="/login"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
@@ -38,14 +39,14 @@ export default function Page() {
             height={760}
             className='hidden md:block'
             alt=' Simple hero image'
-          /> 
+          />
           <Image
             src='/hero-mobile.png'
             width={560}
             height={620}
             className='block md:hidden'
             alt=' Simple hero image'
-          /> 
+          />
         </div>
       </div>
     </main>
